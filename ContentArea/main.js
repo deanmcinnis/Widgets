@@ -5,7 +5,7 @@ console.log(x);
 
     var myRequest = new XMLHttpRequest();
    // myRequest.open('GET', 'https://learnwebcode.github.io/json-example/pets-data.json');
-   myRequest.open('GET', 'C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json'); 
+   myRequest.open('GET', '127.0.0.1\\C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json'); 
    myRequest.responseType = 'json' ;
   
    
