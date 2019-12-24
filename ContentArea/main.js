@@ -27,6 +27,7 @@ console.log(x);
     myRequest.send();
     */
 async function getData() {
+<<<<<<< HEAD
   var response = await fetch("http://localhost:8080/C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json", {
     mode: 'no-cors'}).then(function(response) {
         console.log(response.type); // "opaque"
@@ -42,6 +43,10 @@ async function getData() {
   console.log(myMode);
   response.setRequestHeader("Access-Control-Allow-Origin", "*");
    var myData = response.json();
+=======
+  var response = await fetch("testdata.json");
+  var myData = await response.json();
+>>>>>>> 1b8428d52f56e7a6028a362ecb0e1fbe5341afa2
   console.log("myData: ", myData);
 };
 
