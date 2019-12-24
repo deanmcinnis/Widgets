@@ -30,7 +30,17 @@ async function getData() {
   var response = await fetch("testdata.json");
   var myData = await response.json();
   console.log("myData: ", myData);
+<<<<<<< HEAD
 };
+=======
+}
+
+
+
+
+
+
+>>>>>>> afb3d10b752edf49bb4f9a8c62ab0509125590cd
 
 function createHTML(Data) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
