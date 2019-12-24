@@ -27,10 +27,23 @@ console.log(x);
     myRequest.send();
     */
 async function getData() {
-  var response = await fetch("testdata.json");
-  var myData = response.json();
+  var response = await fetch("http://localhost:8080/C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json", {
+    mode: 'no-cors'}).then(function(response) {
+        console.log(response.type); // "opaque"
+        });
+
+
+
+
+
+
+
+  var myMode = response.mode; // returns "cors" by default
+  console.log(myMode);
+  response.setRequestHeader("Access-Control-Allow-Origin", "*");
+   var myData = response.json();
   console.log("myData: ", myData);
-}
+};
 
 function createHTML(Data) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
@@ -39,5 +52,5 @@ function createHTML(Data) {
 
     var newcontentarea = document.getElementById("contentArea");
     newcontentarea.innerHTML = ourGeneratedHTML;
-}
+};
 
