@@ -3,6 +3,7 @@ var x = location.origin;
 console.log(x);
 
 
+/*
     var myRequest = new XMLHttpRequest();
    // myRequest.open('GET', 'https://learnwebcode.github.io/json-example/pets-data.json');
    myRequest.open('GET', '127.0.0.1\\C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json'); 
@@ -24,7 +25,13 @@ console.log(x);
         alert(`Error ${myRequest.status}: ${myRequest.statusText}`);
     }
     myRequest.send();
-   
+    */
+async function getData() {
+  var response = await fetch("testdata.json");
+  var myData = response.json();
+  console.log("myData: ", myData);
+}
+
 function createHTML(Data) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
     var compliledTemplate = Handlebars.compile(rawTemplate);
