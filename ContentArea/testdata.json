@@ -1,6 +1,11 @@
-{"_id":{"$oid":"5e01260a4c19ea1705f6d490"},"fieldtype":"name","first_name":"dean","last_name":"McInnis","section":"1","order":"1"}
-{"_id":{"$oid":"5e0126bd4c19ea1705f6d491"},"fieldtype":"text","label":"Named Insured","helptext":"The person or company name which will appear as the First Named Insured","section":"1","order":"2"}
-{"_id":{"$oid":"5e01273d4c19ea1705f6d492"},"fieldtype":"text","label":"Agent Name","section":"1","order":"3"}
-{"_id":{"$oid":"5e0127664c19ea1705f6d493"},"fieldtype":"text","label":"Agent ID","section":"1","order":"4"}
-{"_id":{"$oid":"5e0129c14c19ea1705f6d495"},"fieldtype":"date","label":"Desired Effective Date of Policy","section":"1","order":"5"}
-{"_id":{"$oid":"5e012abc4c19ea1705f6d496"},"fieldtype":"checkbox","label":"Coverages Requested","Coverages_Requested":["Property","CGL","Product Liability","Indoor Crop","Outdoor Crop","Cargo"],"section":"1","order":"6"}
+{
+	"_id": {
+		"$oid": "5e01260a4c19ea1705f6d490"
+	},
+	"fieldtype": "name",
+	"first_name": "dean",
+	"last_name": "McInnis",
+	"section": "1",
+	"order": "1"
+}
+

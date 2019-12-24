@@ -28,7 +28,7 @@ console.log(x);
     */
 async function getData() {
   var response = await fetch("testdata.json");
-  var myData = response.json();
+  var myData = await response.json();
   console.log("myData: ", myData);
 }
 
