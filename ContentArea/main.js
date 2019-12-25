@@ -40,11 +40,6 @@ async function getData() {
 }
 
 
-
-
-
-
-
 function createHTML(Data) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
     var compliledTemplate = Handlebars.compile(rawTemplate);
