@@ -27,7 +27,14 @@ console.log(x);
     myRequest.send();
     */
 async function getData() {
-  var response = await fetch("testdata.json");
+  var response = await fetch(window.location.origin + "/api/orders",
+    {
+      method: "GET",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+      },
+    });
   var myData = await response.json();
   console.log("myData: ", myData);
 }
