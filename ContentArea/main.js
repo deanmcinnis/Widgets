@@ -30,9 +30,7 @@ async function getData() {
   var response = await fetch("testdata.json");
   var myData = await response.json();
   console.log("myData: ", myData);
-<<<<<<< HEAD
-};
-=======
+  createHTML(myData);
 }
 
 
@@ -40,13 +38,14 @@ async function getData() {
 
 
 
->>>>>>> afb3d10b752edf49bb4f9a8c62ab0509125590cd
 
-function createHTML(Data) {
-    var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
+function createHTML(jsonData) {
+   var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
+//console.log("in function");
+//console.log("json data = ",jsonData);
     var compliledTemplate = Handlebars.compile(rawTemplate);
-    var ourGeneratedHTML = compliledTemplate(Data);
-
+    var ourGeneratedHTML = compliledTemplate(jsonData);
+  //  console.log(ourGeneratedHTML);
     var newcontentarea = document.getElementById("contentArea");
     newcontentarea.innerHTML = ourGeneratedHTML;
 };
