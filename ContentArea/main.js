@@ -24,19 +24,26 @@ console.log(x);
     }
     myRequest.send();
     */
+//async function getData() {
+//  var response = await fetch(window.location.origin + "/api/orders",
+ //   {
+ //     method: "GET",
+ //     headers: {
+  //      "Accept": "application/json",
+  //      "Content-Type": "application/json",
+ //     },
+//    });
+
 async function getData() {
-  var response = await fetch(window.location.origin + "/api/orders",
-    {
-      method: "GET",
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json",
-      },
-    });
-  var myData = await response.json();
-  console.log("myData: ", myData);
-  createHTML(myData);
-}
+    var response = await fetch("testdata.json");
+    var myData = response.json();
+    console.log("myData: ", myData);
+    createHTML(myData);
+  }
+
+
+
+ 
 
 
 
@@ -44,8 +51,9 @@ async function getData() {
 
 
 
-function createHTML(jsonData) {
-   var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
+
+////function createHTML(jsonData) {
+//   var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
 //console.log("in function");
 //console.log("json data = ",jsonData);
 }
@@ -58,4 +66,6 @@ function createHTML(Data) {
   //  console.log(ourGeneratedHTML);
     var newcontentarea = document.getElementById("contentArea");
     newcontentarea.innerHTML = ourGeneratedHTML;
+    console.log("here in createhtml");
+
 };
