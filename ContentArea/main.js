@@ -3,10 +3,6 @@ console.log(x);
 
 
 /*
-    var myRequest = new XMLHttpRequest();
-   // myRequest.open('GET', 'https://learnwebcode.github.io/json-example/pets-data.json');
-   myRequest.open('GET', '127.0.0.1\\C:\Users\dean\Desktop\go-workspace\src\Widgets\ContentArea\testdata.json'); 
-   myRequest.responseType = 'json' ;
   
    
    myRequest.onload = function() {
@@ -40,23 +36,6 @@ async function getData() {
     console.log("myData: ", myData);
     createHTML(myData);
   }
-
-
-
- 
-
-
-
-
-
-
-
-
-////function createHTML(jsonData) {
-//   var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
-//console.log("in function");
-//console.log("json data = ",jsonData);
-}
 
 
 function createHTML(Data) {
