@@ -37,7 +37,6 @@ async function getData() {
     });
   var myData = await response.json();
   console.log("myData: ", myData);
-<<<<<<< HEAD
   createHTML(myData);
 }
 
@@ -51,13 +50,11 @@ function createHTML(jsonData) {
    var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
 //console.log("in function");
 //console.log("json data = ",jsonData);
-=======
 }
 
 
 function createHTML(Data) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
->>>>>>> 62a589efd5133ec97788be30dce7bc4214902bbc
     var compliledTemplate = Handlebars.compile(rawTemplate);
     var ourGeneratedHTML = compliledTemplate(jsonData);
   //  console.log(ourGeneratedHTML);
