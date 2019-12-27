@@ -30,15 +30,17 @@ console.log(x);
  //     },
 //    });
 
+console.log("in this main area now");
+
 async function getData() {
     var response = await fetch("testdata.json");
-    var myData = response.json();
+    var myData = await response.json();
     console.log("myData: ", myData);
     createHTML(myData);
   }
 
 
-function createHTML(Data) {
+function createHTML(jsonData) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
     var compliledTemplate = Handlebars.compile(rawTemplate);
     var ourGeneratedHTML = compliledTemplate(jsonData);
