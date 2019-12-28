@@ -39,8 +39,11 @@ async function getData() {
    console.log("fieldtype: ",myData.questions[0].fieldtype);
     createHTML(myData);
     
-  }
+  };
 
+ // Handelbars.registerHelper("calculateAge", funtion() {
+ //   return "testing 123";
+ // };
 
 function createHTML(jsonData) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;
