@@ -5,14 +5,7 @@ console.log(x);
 /*
   
    
-   myRequest.onload = function() {
-        if (myRequest.status >= 200 && myRequest.status < 400) {
-            var myData = JSON.parse(myRequest.responseText);
-            createHTML(myData);
-        } else {
-            console.log("We connected to the server but had an error");
-        }
-    };
+  
     
     myRequest.onerror = function() {
         console.log("Connection error");
