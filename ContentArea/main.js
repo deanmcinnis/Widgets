@@ -30,13 +30,15 @@ console.log(x);
  //     },
 //    });
 
-console.log("in this main area now");
+//console.log("in this main area now");
 
 async function getData() {
     var response = await fetch("testdata.json");
     var myData = await response.json();
     console.log("myData: ", myData);
+   console.log("fieldtype: ",myData.questions[0].fieldtype);
     createHTML(myData);
+    
   }
 
 
@@ -47,6 +49,6 @@ function createHTML(jsonData) {
   //  console.log(ourGeneratedHTML);
     var newcontentarea = document.getElementById("contentArea");
     newcontentarea.innerHTML = ourGeneratedHTML;
-    console.log("here in createhtml");
+  //  console.log("here in createhtml");
 
 };

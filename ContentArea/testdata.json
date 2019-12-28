@@ -7,6 +7,7 @@
 		"fieldtype": "name",
 		"first_name": "Dean",
 		"last_name": "McInnis",
+		"favfoods": ["Chicken", "shrimp", "steak", "salad"],
 		"section": "1",
 		"order": "1"
 	},
@@ -17,6 +18,7 @@
 		"fieldtype": "name",
 		"first_name": "Aga",
 		"last_name": "Bednarska",
+		"favfoods": ["Greek Salad", "Perogi", "chicken"],
 		"section": "1",
 		"order": "1"
 	}

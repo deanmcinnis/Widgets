@@ -6,6 +6,7 @@
 
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -34,8 +35,24 @@ body {
 
 <script id="questionsTemplate" type="text/x-handlebars-template">
   {{#each questions}}
-  <h2>{{first_name}}  {{last_name}}</h2>
+    <div class="pet">
+        <div class="photo-column">
+          <h2>{{first_name}}  {{last_name}}</h2>
+        </div>
+
     
+        <div class="info-column">
+          <h2> <span class="species">{{fieldtype}} {{section}} </span> </h2>
+          <h4 class="headline-bar"> Favorite Foods </h4>
+          <ul class="favorite-foods">
+            {{#each favfoods}}
+              <li> {{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+     </div> 
+
+      
   {{/each}}
 </script>
 
