@@ -7,6 +7,7 @@
 		"fieldtype": "name",
 		"first_name": "Dean",
 		"last_name": "McInnis",
+		"age": 35,
 		"favfoods": ["Chicken", "shrimp", "steak", "salad"],
 		"section": "1",
 		"order": "1"
@@ -18,6 +19,7 @@
 		"fieldtype": "name",
 		"first_name": "Aga",
 		"last_name": "Bednarska",
+		"age": 29,
 		"favfoods": ["Greek Salad", "Perogi", "Plain Yogert", "chicken"],
 		"section": "1",
 		"order": "2"
@@ -28,6 +30,7 @@
 			},
 		"fieldtype": "ynquestion",
 		"question": "Have you been arrested?",
+		"age": 5,
 		"section": "1",
 		"order": "3"
 	}

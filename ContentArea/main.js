@@ -24,8 +24,14 @@ async function getData() {
     
   };
 
-Handlebars.registerHelper("calculateAge", function(){
- return "testing 123";
+Handlebars.registerHelper("calculateAge", function(age){
+ var displayAge = age;
+ if (displayAge > 30) {
+   return displayAge + " (seriously old)";
+ } else {
+   return displayAge + " (not so old)";
+ }
+ 
 });
 
 function createHTML(jsonData) {
