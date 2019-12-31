@@ -2,17 +2,7 @@ var x = location.origin;
 console.log(x);
 
 
-/*
-  
-   
-  
-    
-    myRequest.onerror = function() {
-        console.log("Connection error");
-        alert(`Error ${myRequest.status}: ${myRequest.statusText}`);
-    }
-    myRequest.send();
-    */
+
 //async function getData() {
 //  var response = await fetch(window.location.origin + "/api/orders",
  //   {
@@ -34,9 +24,9 @@ async function getData() {
     
   };
 
- // Handelbars.registerHelper("calculateAge", funtion() {
- //   return "testing 123";
- // };
+Handlebars.registerHelper("calculateAge", function(){
+ return "testing 123";
+});
 
 function createHTML(jsonData) {
     var rawTemplate = document.getElementById("questionsTemplate").innerHTML;

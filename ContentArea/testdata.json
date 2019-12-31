@@ -18,7 +18,7 @@
 		"fieldtype": "name",
 		"first_name": "Aga",
 		"last_name": "Bednarska",
-		"favfoods": ["Greek Salad", "Perogi", "chicken"],
+		"favfoods": ["Greek Salad", "Perogi", "Plain Yogert", "chicken"],
 		"section": "1",
 		"order": "2"
 	},
