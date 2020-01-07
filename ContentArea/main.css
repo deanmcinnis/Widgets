@@ -67,7 +67,7 @@ html, body {
   }
   
   .pet {
-    background-color: #FFF;
+    background-color: rgb(243, 235, 129);
     padding: 20px;
     margin-bottom: 20px;
     overflow: hidden;

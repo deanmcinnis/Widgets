@@ -11,8 +11,6 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
-
 </style>
 <script src="handlebars-v4.5.3.js"></script>
 <script src="main.js"></script> 
@@ -34,20 +32,15 @@ body {
 <div id="deanData"> </div>
 this is just a handlebars test....
 <script type="text/javascript">
-
     var myInfo = " <p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}} </p>";
       var template = Handlebars.compile(myInfo);
       var data = template({name: "Dean", street: "2451 NW 31st. Ct", 
          city: "Oakland Park", state: "Florida"});
-
       document.getElementById("deanData").innerHTML += data;
-
-
  //Handelbars.registerHelper("calculateAge", function() {
  // console.log("inside register now");
  // return new Handlebars.SafeString("testing 123");
  // )}
-
     
 </script>
 
