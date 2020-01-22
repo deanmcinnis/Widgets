@@ -12,6 +12,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="handlebars-v4.5.3.js"></script>
 <script src="main.js"></script> 
 
@@ -22,6 +23,13 @@ body {
 
 <div id="main">
   <h2>Content area test</h2>
+
+ <!-- This code would insert an iframt from Zoho to access the SafeHerb application 
+   <iframe height='1500px' width='75%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creator.zohopublic.com/deanmcinnis1/safeherb-application/form-embed/Safe_Herb_Application/SUtxEK0taOGRCQJPy4EA8BhWKvKUt0TxG2WsdTW5CQ8Vu1FqOE1usH8C6khZZ6FhVBpWWy7PnMSsf2Je6pAhG2KWM2vHWBSqru5y'></iframe> -->
+ 
+
+
+
   <p>This is another new test to see if I can build the content area dynamically</p>
   <p>  this code calls the main.js which does the work of opening the json file and parsing; it uses Handlebars to display the JSON</p>
 </div>
@@ -29,20 +37,27 @@ body {
   <button onclick="getData()" id="btn"> get data </button>
 </div>
 
-<div id="deanData"> </div>
-this is just a handlebars test....
-<script type="text/javascript">
-    var myInfo = " <p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}} </p>";
-      var template = Handlebars.compile(myInfo);
-      var data = template({name: "Dean", street: "2451 NW 31st. Ct", 
-         city: "Oakland Park", state: "Florida"});
-      document.getElementById("deanData").innerHTML += data;
- //Handelbars.registerHelper("calculateAge", function() {
- // console.log("inside register now");
- // return new Handlebars.SafeString("testing 123");
- // )}
-    
-</script>
+<div id="deanData"> 
+  <p>I'm inside of deanData html now...</p>
+
+  <script id="nameTemplate" type="text/x-handlebars-template">
+    {{#each questions}}
+    <h1>{{first_name}}  {{last_name}}</h1>
+    {{/each}}
+  </script>
+
+  <script id="yesnoTemplate" type="text/x-handlebars-template">
+    {{#each questions}}
+    <h2>{{fieldtype}} </h2>
+    {{/each}}
+  </script>
+  
+</div>
+
+
+<div id="newContentArea">
+  I'm here in new Content Area...
+</div>
 
 
 
@@ -50,7 +65,8 @@ this is just a handlebars test....
 
 
  
- 
+
+
 <script id="questionsTemplate" type="text/x-handlebars-template">
 
 
@@ -58,6 +74,7 @@ this is just a handlebars test....
   {{#each questions}}
     <div class="pet">
         <div class="photo-column">
+         
         
           <h2>{{first_name}}  {{last_name}}</h2>
           
